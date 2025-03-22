@@ -24,6 +24,14 @@ describe("string calculator add function test suite", () => {
         expect(result).toBe(14);
     })
 
+  });
+
+  describe("should support additional delimiters", () => {
+    
+    it("should be able to handle new line between numbers instead of commas", () => {
+        const result = add("1\n2,3");
+        expect(result).toBe(6);
+    })
   })
 
 
