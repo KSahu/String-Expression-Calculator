@@ -14,6 +14,11 @@ describe("string calculator add function test suite", () => {
         expect(result).toBe(3);
     })
 
+    it("should return sum of comma separated two numbers in the string", () => {
+        const result = add("2,3");
+        expect(result).toBe(5);
+    })
+
   })
 
 
