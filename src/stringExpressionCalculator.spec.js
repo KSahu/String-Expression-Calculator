@@ -9,6 +9,11 @@ describe("string calculator add function test suite", () => {
         expect(result).toBe(0);
     })
 
+    it("should return the input as number if string has one number", () => {
+        const result = add("3");
+        expect(result).toBe(3);
+    })
+
   })
 
 
