@@ -41,7 +41,15 @@ describe("string calculator add function test suite", () => {
         const result = add("//;\n1;2");
         expect(result).toBe(3);
     })
-  })
+  });
+
+  describe("should not allow negative numbers", () => {
+
+    it("should throw exception as 'negative numbers not allowed <negative_number>'", () => {
+        expect(() => add("-1")).toThrowError("negative numbers not allowed -1");
+    })
+
+  });
 
 
 
