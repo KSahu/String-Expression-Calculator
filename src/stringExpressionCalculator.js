@@ -10,7 +10,9 @@ const add = (inputString) => {
     let sum = 0;
 
     for(const number of numbers) {
-      sum += parseInt(number);
+      const parsedNumber = parseInt(number);
+      if(parsedNumber < 0) throw Error(`negative numbers not allowed ${parsedNumber}`)
+      sum += parsedNumber;
     }
 
     return sum;
