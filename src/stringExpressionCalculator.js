@@ -1,10 +1,11 @@
-const add = (a) => {
+const add = (inputString) => {
   
-    if(a=="") return 0;
+    if(inputString=="") return 0;
 
-    if(a.length==1) return parseInt(a);
+    const numbers = inputString.split(",");
 
-    const numbers = a.split(",");
+    if(numbers.length==1) return parseInt(numbers[0]);
+    
     return parseInt(numbers[0])+parseInt(numbers[1]);
 }
 
