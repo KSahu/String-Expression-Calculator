@@ -32,6 +32,15 @@ describe("string calculator add function test suite", () => {
         const result = add("1\n2,3");
         expect(result).toBe(6);
     })
+
+    /*
+    ** delimiters can be changed by appending the delimiter in the string itself as below
+    ** "//[delimiter]\n[numbers...]"
+    */
+    it("should be able change the delimiter with given format", () => {
+        const result = add("//;\n1;2");
+        expect(result).toBe(3);
+    })
   })
 
 
