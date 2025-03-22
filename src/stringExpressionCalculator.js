@@ -4,9 +4,13 @@ const add = (inputString) => {
 
     const numbers = inputString.split(",");
 
-    if(numbers.length==1) return parseInt(numbers[0]);
-    
-    return parseInt(numbers[0])+parseInt(numbers[1]);
+    let sum = 0;
+
+    for(const number of numbers) {
+      sum += parseInt(number);
+    }
+
+    return sum;
 }
 
 module.exports = add;
