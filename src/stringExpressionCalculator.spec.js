@@ -49,6 +49,10 @@ describe("string calculator add function test suite", () => {
         expect(() => add("-1")).toThrowError("negative numbers not allowed -1");
     })
 
+    it("should include all negative numbers in error message separated by comma", () => {
+        expect(() => add("-1,-2")).toThrowError("negative numbers not allowed -1,-2");
+    })
+
   });
 
 
