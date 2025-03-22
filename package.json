@@ -1,0 +1,22 @@
+{
+  "name": "string-expression-calculator",
+  "version": "1.0.0",
+  "description": "String expression calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KSahu/String-Expression-Calculator.git"
+  },
+  "author": "kanishk-sahu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KSahu/String-Expression-Calculator/issues"
+  },
+  "homepage": "https://github.com/KSahu/String-Expression-Calculator#readme",
+  "devDependencies": {
+    "jasmine": "^5.6.0"
+  }
+}
