@@ -9,11 +9,17 @@ const add = (inputString) => {
 
     let sum = 0;
 
+    let negativeNumbersString = "";
+
     for(const number of numbers) {
       const parsedNumber = parseInt(number);
-      if(parsedNumber < 0) throw Error(`negative numbers not allowed ${parsedNumber}`)
+      if(parsedNumber < 0) {
+        negativeNumbersString += negativeNumbersString.length == 0 ? parsedNumber : `,${parsedNumber}`
+      }
       sum += parsedNumber;
     }
+
+    if(negativeNumbersString.length>0) throw Error(`negative numbers not allowed ${negativeNumbersString}`);
 
     return sum;
 }
