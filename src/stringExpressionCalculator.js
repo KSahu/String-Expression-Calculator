@@ -2,7 +2,7 @@ const add = (inputString) => {
   
     if(inputString=="") return 0;
 
-    const numbers = inputString.split(",");
+    const numbers = inputString.split(/\n|,/);
 
     let sum = 0;
 
